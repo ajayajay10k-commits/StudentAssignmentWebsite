@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+
+    <student>
+        <registerNumber>902513</registerNumber>
+        <name>Ajay</name>
+        <department>AI &amp; Data Science</department>
+        <year>III Year</year>
+        <email>ajay@example.com</email>
+    </student>
+
+    <student>
+        <registerNumber>902514</registerNumber>
+        <name>Arun Kumar</name>
+        <department>Computer Science Engineering</department>
+        <year>III Year</year>
+        <email>arun@example.com</email>
+    </student>
+
+    <student>
+        <registerNumber>902515</registerNumber>
+        <name>Priya Sharma</name>
+        <department>Information Technology</department>
+        <year>II Year</year>
+        <email>priya@example.com</email>
+    </student>
+
+    <student>
+        <registerNumber>902516</registerNumber>
+        <name>Rahul Raj</name>
+        <department>Computer Science Engineering</department>
+        <year>III Year</year>
+        <email>rahul@example.com</email>
+    </student>
+
+</students>

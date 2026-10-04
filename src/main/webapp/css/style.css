@@ -1,0 +1,822 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f6f7fb;
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================= HEADER ================= */
+
+.top-header {
+    height: 78px;
+    padding: 0 8%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8eaf0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    background: #536dfe;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.brand h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.brand p {
+    color: #8991a3;
+    font-size: 11px;
+}
+
+.student-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eef0ff;
+    color: #536dfe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.student-profile strong,
+.student-profile span {
+    display: block;
+}
+
+.student-profile strong {
+    font-size: 13px;
+}
+
+.student-profile span {
+    color: #8a92a4;
+    font-size: 11px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 530px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    background:
+        linear-gradient(120deg, #f7f8ff 0%, #ffffff 55%, #f1f3ff 100%);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    display: inline-block;
+    color: #536dfe;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #536dfe;
+}
+
+.hero-content p {
+    max-width: 570px;
+    color: #70798d;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 24px;
+    background: #536dfe;
+    color: white;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(83,109,254,0.22);
+    transition: 0.25s;
+}
+
+.main-button:hover {
+    background: #4259d4;
+    transform: translateY(-2px);
+}
+
+
+/* ================= HERO PANEL ================= */
+
+.hero-panel {
+    width: 330px;
+    padding: 30px;
+    background: #172033;
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 25px 55px rgba(23,32,51,0.18);
+}
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #6dd58c;
+}
+
+.panel-line {
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+    margin: 24px 0;
+}
+
+.panel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.panel-item:last-child {
+    border-bottom: none;
+}
+
+.panel-item strong {
+    font-size: 25px;
+}
+
+.panel-item span {
+    color: #aeb6c8;
+    font-size: 12px;
+}
+
+
+/* ================= ASSIGNMENTS SECTION ================= */
+
+.assignments {
+    padding: 95px 8%;
+    background: #ffffff;
+}
+
+.section-title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    gap: 30px;
+}
+
+.section-title > div > span {
+    color: #536dfe;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin-top: 8px;
+    letter-spacing: -0.8px;
+}
+
+.section-title > p {
+    color: #7d8597;
+    font-size: 13px;
+    max-width: 310px;
+}
+
+
+/* ================= ATTRACTIVE CARDS ================= */
+
+.assignment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* Main card */
+
+.assignment-card {
+    position: relative;
+    min-height: 390px;
+    border-radius: 24px;
+    background: #ffffff;
+    border: 1px solid #e7e9f0;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 25px rgba(30,40,70,0.05);
+}
+
+
+/* Colored top area */
+
+.assignment-card::before {
+    content: "";
+    display: block;
+    height: 105px;
+    background: #536dfe;
+}
+
+
+/* Different colors */
+
+.assignment-card:nth-child(2)::before {
+    background: #8b5cf6;
+}
+
+.assignment-card:nth-child(3)::before {
+    background: #0ea5a4;
+}
+
+
+/* Hover */
+
+.assignment-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 55px rgba(30,40,70,0.15);
+    border-color: transparent;
+}
+
+
+/* Number circle */
+
+.card-number {
+    position: absolute;
+    top: 63px;
+    left: 28px;
+
+    width: 76px;
+    height: 76px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    color: #536dfe;
+
+    border: 6px solid rgba(255,255,255,0.45);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.13);
+}
+
+.assignment-card:nth-child(2) .card-number {
+    color: #8b5cf6;
+}
+
+.assignment-card:nth-child(3) .card-number {
+    color: #0ea5a4;
+}
+
+
+/* Card content */
+
+.card-content {
+    padding: 58px 28px 28px;
+}
+
+.card-tag {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+
+    background: #eef0ff;
+    color: #536dfe;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+
+    margin-bottom: 14px;
+}
+
+.assignment-card:nth-child(2) .card-tag {
+    background: #f2edff;
+    color: #8b5cf6;
+}
+
+.assignment-card:nth-child(3) .card-tag {
+    background: #e7f9f8;
+    color: #0ea5a4;
+}
+
+
+.card-content h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+}
+
+.card-content p {
+    color: #788196;
+    font-size: 13px;
+    line-height: 1.75;
+    min-height: 72px;
+}
+
+
+/* Bottom button */
+
+.open-link {
+    margin-top: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 15px;
+
+    border-radius: 9px;
+
+    background: #f5f6fa;
+
+    color: #172033;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.open-link span {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #536dfe;
+    color: white;
+
+    transition: 0.25s;
+}
+
+.assignment-card:nth-child(2) .open-link span {
+    background: #8b5cf6;
+}
+
+.assignment-card:nth-child(3) .open-link span {
+    background: #0ea5a4;
+}
+
+.assignment-card:hover .open-link {
+    background: #eef0ff;
+}
+
+.assignment-card:hover .open-link span {
+    transform: translateX(4px);
+}
+
+
+/* ================= STUDENT SECTION ================= */
+
+.student-section {
+    margin: 75px 8%;
+    padding: 42px 48px;
+    background: #f1f3ff;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.student-section-content > span {
+    color: #536dfe;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.student-section h2 {
+    font-size: 28px;
+    margin: 7px 0;
+}
+
+.student-section p {
+    color: #70798d;
+    font-size: 13px;
+}
+
+.student-badge {
+    padding: 17px 25px;
+    background: white;
+    border-radius: 11px;
+
+    color: #536dfe;
+
+    font-size: 20px;
+    font-weight: 800;
+
+    box-shadow: 0 10px 25px rgba(40,50,80,0.08);
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    padding: 28px 8%;
+    background: #111827;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer strong,
+.footer span {
+    display: block;
+}
+
+.footer strong {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.footer span,
+.footer p {
+    color: #8992a5;
+    font-size: 11px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-panel {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .assignment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assignment-card {
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .top-header {
+        padding: 15px 5%;
+        height: auto;
+    }
+
+    .student-profile span {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .assignments {
+        padding: 65px 5%;
+    }
+
+    .section-title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .section-title h2 {
+        font-size: 31px;
+    }
+
+    .assignment-card {
+        min-height: 370px;
+    }
+
+    .student-section {
+        margin: 45px 5%;
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer {
+        padding: 25px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+/* ================= TECHNICAL CARD DECORATIONS ================= */
+
+.assignment-card {
+    position: relative;
+    min-height: 390px;
+    border-radius: 24px;
+    background: #ffffff;
+    border: 1px solid #e7e9f0;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 25px rgba(30,40,70,0.05);
+}
+
+/* Technical colored header */
+
+.assignment-card::before {
+    content: "";
+    display: block;
+    height: 125px;
+    position: relative;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.18) 25%, transparent 25%) 0 0 / 22px 22px,
+        linear-gradient(45deg, rgba(255,255,255,0.10) 25%, transparent 25%) 0 0 / 22px 22px,
+        #536dfe;
+}
+
+.assignment-card:nth-child(2)::before {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.18) 25%, transparent 25%) 0 0 / 22px 22px,
+        linear-gradient(45deg, rgba(255,255,255,0.10) 25%, transparent 25%) 0 0 / 22px 22px,
+        #8b5cf6;
+}
+
+.assignment-card:nth-child(3)::before {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.18) 25%, transparent 25%) 0 0 / 22px 22px,
+        linear-gradient(45deg, rgba(255,255,255,0.10) 25%, transparent 25%) 0 0 / 22px 22px,
+        #0ea5a4;
+}
+
+/* Technical text inside colored area */
+
+.assignment-card::after {
+    position: absolute;
+    top: 25px;
+    right: 22px;
+    font-family: "Courier New", monospace;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.82);
+}
+
+.assignment-card:nth-child(1)::after {
+    content: "<SERVLET />";
+}
+
+.assignment-card:nth-child(2)::after {
+    content: "<JSP + BEAN />";
+}
+
+.assignment-card:nth-child(3)::after {
+    content: "<AJAX + XML />";
+}
+
+/* Technical code lines */
+
+.assignment-card .card-content::before {
+    content: "01  public class Student   02  request.getParameter()";
+    display: block;
+    position: absolute;
+    top: 93px;
+    left: 28px;
+    color: rgba(255,255,255,0.38);
+    font-family: "Courier New", monospace;
+    font-size: 8px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.assignment-card:nth-child(2) .card-content::before {
+    content: "01  <jsp:useBean>   02  student.setName()";
+}
+
+.assignment-card:nth-child(3) .card-content::before {
+    content: "01  XMLHttpRequest()   02  responseXML";
+}
+
+/* Number badge */
+
+.card-number {
+    position: absolute;
+    top: 62px;
+    left: 28px;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    color: #536dfe;
+    border: 6px solid rgba(255,255,255,0.55);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.16);
+    z-index: 2;
+}
+
+.assignment-card:nth-child(2) .card-number {
+    color: #8b5cf6;
+}
+
+.assignment-card:nth-child(3) .card-number {
+    color: #0ea5a4;
+}
+
+/* Decorative circuit dots */
+
+.card-content::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 48px;
+    right: 35px;
+    background: rgba(255,255,255,0.75);
+    box-shadow:
+        -18px 18px 0 rgba(255,255,255,0.35),
+        -38px 0 0 rgba(255,255,255,0.25),
+        -56px 20px 0 rgba(255,255,255,0.18);
+    pointer-events: none;
+}
+
+/* Card hover */
+
+.assignment-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 28px 60px rgba(30,40,70,0.17);
+}
+
+.assignment-card:hover::before {
+    filter: brightness(1.08);
+}
+
+.assignment-card:hover .card-number {
+    transform: rotate(8deg) scale(1.05);
+    transition: 0.3s;
+}
+
+/* Technology badge */
+
+.card-tag {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 6px;
+    background: #eef0ff;
+    color: #536dfe;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    margin-bottom: 14px;
+}
+
+.assignment-card:nth-child(2) .card-tag {
+    background: #f2edff;
+    color: #8b5cf6;
+}
+
+.assignment-card:nth-child(3) .card-tag {
+    background: #e7f9f8;
+    color: #0ea5a4;
+}
+.hero {
+    min-height: 530px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(120deg, #f7f8ff 0%, #ffffff 55%, #f1f3ff 100%);
+}
+
+.hero-content {
+    max-width: 780px;
+    text-align: center;
+}
+
+.hero-content p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.main-button {
+    margin-top: 30px;
+}
+
+
+/* ===== Shared assignment-page design refresh ===== */
+.header {
+    min-height: 78px; padding: 14px clamp(20px, 7vw, 100px);
+    background: #fff; display:flex; align-items:center; justify-content:space-between;
+    border-bottom:1px solid #e8eaf0; box-shadow:0 4px 18px rgba(23,32,51,.04);
+}
+.logo {display:flex;align-items:center;gap:13px}
+.logo-icon {display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:13px;background:#536dfe;color:#fff;font-weight:800}
+.logo h1 {font-size:15px;letter-spacing:1px;margin:0}.logo p {font-size:11px;color:#8991a3;margin-top:3px}
+.assignment-page {max-width:900px;margin:0 auto;padding:54px 24px 72px}
+.page-title {margin-bottom:28px;padding:28px 30px;border:1px solid #e7eaf2;border-radius:18px;background:linear-gradient(120deg,#f2f4ff,#fff 75%)}
+.page-title .tag {display:inline-block;color:#536dfe;font-size:11px;font-weight:800;letter-spacing:1.8px;margin-bottom:7px}
+.page-title h2 {font-size:clamp(30px,4vw,42px);line-height:1.12;letter-spacing:-1px;margin:5px 0 10px;color:#172033}
+.page-title p {color:#687389;line-height:1.65;font-size:14px}
+.form-card,.result-card {background:#fff;padding:clamp(22px,4vw,38px);border-radius:18px;border:1px solid #e4e8f0;box-shadow:0 14px 38px rgba(35,48,75,.07);margin-bottom:22px;transition:box-shadow .2s ease,transform .2s ease}
+.form-card:hover,.result-card:hover {box-shadow:0 18px 42px rgba(35,48,75,.10)}
+.form-group {margin-bottom:20px}.form-group label {display:block;margin-bottom:8px;font-weight:700;font-size:13px;color:#26324a}
+.form-group input,.form-group select {width:100%;padding:13px 14px;border:1px solid #dce1eb;border-radius:10px;background:#fff;color:#172033;font:inherit;font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s}
+.form-group input:focus,.form-group select:focus {border-color:#536dfe;box-shadow:0 0 0 4px rgba(83,109,254,.12)}
+.submit-btn {width:100%;padding:14px 18px;border:0;border-radius:10px;background:#172033;color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.submit-btn:hover {background:#536dfe;transform:translateY(-1px);box-shadow:0 8px 20px rgba(83,109,254,.2)}
+.back-home {display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:11px 16px;border:1px solid #dce2f0;border-radius:9px;background:#fff;color:#34415b;text-decoration:none;font-weight:700;font-size:13px;transition:all .2s}
+.back-home:hover {border-color:#536dfe;color:#536dfe;background:#f5f6ff;transform:translateX(-2px)}
+body > footer {padding:22px;text-align:center;background:#111827;color:#aab3c5;font-size:12px}
+.result-row {gap:16px;flex-wrap:wrap}.result-value {text-align:right;overflow-wrap:anywhere}
+.student-details-card {display:flex;align-items:center;gap:13px;width:min(100%,440px);margin:26px auto 0;padding:14px 17px;text-align:left;background:rgba(255,255,255,.92);border:1px solid #e4e8f5;border-radius:14px;box-shadow:0 10px 28px rgba(35,48,75,.07)}
+.details-avatar {flex:0 0 42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#eef0ff;color:#536dfe;font-weight:800;font-size:17px}
+.details-copy {min-width:0}.details-eyebrow {display:block;color:#536dfe;font-size:9px;font-weight:800;letter-spacing:1.4px;margin-bottom:3px}.details-copy strong {display:block;font-size:14px;color:#172033}.details-meta {display:flex;flex-wrap:wrap;gap:5px 12px;margin-top:5px;color:#778198;font-size:10px}
+@media(max-width:600px){.header{padding:13px 5%}.assignment-page{padding:32px 5% 48px}.page-title{padding:22px 20px}.form-card,.result-card{padding:22px 18px}.result-row{align-items:flex-start}.result-value{text-align:left}}
